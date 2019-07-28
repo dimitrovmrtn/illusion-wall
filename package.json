@@ -2,16 +2,26 @@
   "name": "photowall",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/dimitrovmrtn/illusion-wall",
   "dependencies": {
+    "firebase": "^4.8.2",
+    "gh-pages": "^2.0.1",
+    "prop-types": "^15.5.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "3.0.1",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
